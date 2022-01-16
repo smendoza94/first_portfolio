@@ -99,7 +99,7 @@ footer a {
 } 
 
 section {
-    padding: 60px;
+    padding: 50px;
 }
 
 .section-title {
@@ -158,6 +158,7 @@ section {
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
 
+/* about me styling */
 .intro p {
     line-height: 1.7;
     color: var(--tertiary-color);
@@ -167,17 +168,50 @@ section {
     text-align: center;
 }
 
+/* work and projects section container for flex */
 .projects {
     width: 100%;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .projects div {
-    width: 250px;
-    height: 150px;
-    margin: 10px;
+    width: 32%;
+    height: 200px;
+    margin: 2px;
     border: solid 5px var(--quinary-color);
+    display: flex;
+    flex-direction: column;
+}
+
+.projects div h3 {
+    font-size: 16px;
+    background: var(--secondary-color);
+    color: var(--primary-color);
+    padding: 2px;
+    margin-top: auto;
+    width: 25%;
+}
+
+.projects div p {
+    font-size: 14px;
+    background: var(--secondary-color);
+    color: var(--tertiary-color);
+    padding: 3px;
+    margin-top: auto;
+}
+
+.projects div img {
+    height: 100%;
+    margin: 0 auto;
+}
+
+#project-1 {
+    width: 100%;
+    height: 400px;
+    background-image: url("../images/run-buddy-snippet.jpg");
+    background-size: cover;
 }
