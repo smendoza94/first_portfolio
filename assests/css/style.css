@@ -78,7 +78,7 @@ footer {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    background: var(--secondary-color);
+    background: var(--tertiary-color);
     width: 100%;
     padding: 40px 35px;
 }
@@ -113,7 +113,7 @@ section {
 }
 
 .primary-border {
-    border-color: var(--primary-color);
+    border-color: var(--quaternary-color);
 }
 
 .secondary-border {
@@ -187,7 +187,24 @@ section {
     flex-direction: column;
 }
 
-.projects div h3 {
+.projects a {
+    width: 32%;
+    height: 200px;
+    margin: 2px;
+    border: solid 5px var(--quinary-color);
+    display: flex;
+    flex-direction: column;
+}
+
+.projects div:hover{
+    opacity: 0.5;
+}
+
+.projects a:hover{
+    opacity: 0.5;
+}
+
+.projects a h3 {
     font-size: 16px;
     background: var(--secondary-color);
     color: var(--primary-color);
@@ -196,17 +213,9 @@ section {
     width: 25%;
 }
 
-.projects div p {
-    font-size: 14px;
-    background: var(--secondary-color);
-    color: var(--tertiary-color);
-    padding: 3px;
-    margin-top: auto;
-}
-
 .projects div img {
-    height: 100%;
-    margin: 0 auto;
+    height: 75%;
+    margin: auto auto;
 }
 
 #project-1 {
@@ -214,4 +223,48 @@ section {
     height: 400px;
     background-image: url("../images/run-buddy-snippet.jpg");
     background-size: cover;
+}
+
+#socials {
+    background: var(--secondary-color);
+}
+
+.socials h2 {
+    color: var(--primary-color);
+}
+
+.social-info {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.social-info > * {
+    flex: 1;
+    margin: 15px;
+}
+
+.social-info div {
+    color: var(--primary-color);
+}
+
+.social-info h2 {
+    color: var(--primary-color);
+    font-size: 32px;
+}
+
+.social-info address {
+    margin: 20px 0;
+    line-height: 1.5;
+    font-size: 16px;
+    font-style: normal;
+    text-align: center;
+}
+
+.social-info a {
+    color: var(--primary-color);
+}
+
+.flex-row {
+    display: flex;
 }
