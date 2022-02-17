@@ -226,6 +226,11 @@ section {
     background-size: cover;
 }
 
+#project-2 {
+    background-image: url("../images/liquir-zip-lookup.jpg");
+    background-size: cover;
+}
+
 #socials {
     background: var(--secondary-color);
 }
